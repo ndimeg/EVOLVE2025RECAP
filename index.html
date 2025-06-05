@@ -1,111 +1,200 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVOLVE 2025 Recap</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    .slideshow-container {
+      max-width: 90vw;
+      margin: auto;
+      position: relative;
+    }
+    .slide {
+      display: none;
+    }
+    .slide img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .active {
+      display: block;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Event Photo Slideshow&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #000;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.slideshow-container {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 90vw;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.slide {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.slide img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.active {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.caption {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.dot-container {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.dot {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #bbb;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.dot.active {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #717171;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Event Highlights&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="slideshow-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="slide active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="photo1.jpg" alt="Photo 1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="photo2.jpg" alt="Photo 2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="photo3.jpg" alt="Photo 3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="dot-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="dot active" onclick="showSlide(0)"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="dot" onclick="showSlide(1)"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="dot" onclick="showSlide(2)"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let slideIndex = 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const slides = document.querySelectorAll(".slide");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const dots = document.querySelectorAll(".dot");</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function showSlide(n) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>slides.forEach((slide, index) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>slide.classList.remove("active");</p>
-<p class="p1"><span class="Apple-converted-space">        </span>dots[index].classList.remove("active");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p1"><span class="Apple-converted-space">      </span>slides[n].classList.add("active");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>dots[n].classList.add("active");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>slideIndex = n;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function autoSlide() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>slideIndex = (slideIndex + 1) % slides.length;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>showSlide(slideIndex);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>setInterval(autoSlide, 3000); // change slide every 3 seconds</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<h1>EVOLVE 2025 Recap</h1>
+<div class="slideshow-container">
+  <div class="slide active">
+    <img src="DSC00195 Medium.png" alt="Slide 1">
+  </div>
+  <div class="slide">
+    <img src="DSC00256 Medium.png" alt="Slide 2">
+  </div>
+  <div class="slide">
+    <img src="DSC00330 Medium.png" alt="Slide 3">
+  </div>
+  <div class="slide">
+    <img src="DSC00347 Medium.png" alt="Slide 4">
+  </div>
+  <div class="slide">
+    <img src="DSC00385 Medium.png" alt="Slide 5">
+  </div>
+  <div class="slide">
+    <img src="DSC00423 Medium.png" alt="Slide 6">
+  </div>
+  <div class="slide">
+    <img src="DSC00474 Medium.png" alt="Slide 7">
+  </div>
+  <div class="slide">
+    <img src="DSC00482 Medium.png" alt="Slide 8">
+  </div>
+  <div class="slide">
+    <img src="DSC00491 Medium.png" alt="Slide 9">
+  </div>
+  <div class="slide">
+    <img src="DSC00570 Medium.png" alt="Slide 10">
+  </div>
+  <div class="slide">
+    <img src="DSC00609 Medium.png" alt="Slide 11">
+  </div>
+  <div class="slide">
+    <img src="DSC00637 Medium.png" alt="Slide 12">
+  </div>
+  <div class="slide">
+    <img src="DSC00642 Medium.png" alt="Slide 13">
+  </div>
+  <div class="slide">
+    <img src="DSC00664 Medium.png" alt="Slide 14">
+  </div>
+  <div class="slide">
+    <img src="DSC00698 Medium.png" alt="Slide 15">
+  </div>
+  <div class="slide">
+    <img src="DSC00989 Medium.png" alt="Slide 16">
+  </div>
+  <div class="slide">
+    <img src="DSC01036 Medium.png" alt="Slide 17">
+  </div>
+  <div class="slide">
+    <img src="DSC01075 Medium.png" alt="Slide 18">
+  </div>
+  <div class="slide">
+    <img src="IMG_0740 Medium.png" alt="Slide 19">
+  </div>
+  <div class="slide">
+    <img src="IMG_0748 Medium.png" alt="Slide 20">
+  </div>
+  <div class="slide">
+    <img src="IMG_1159 Medium.png" alt="Slide 21">
+  </div>
+  <div class="slide">
+    <img src="IMG_2363 Medium.png" alt="Slide 22">
+  </div>
+  <div class="slide">
+    <img src="IMG_2371 Medium.png" alt="Slide 23">
+  </div>
+  <div class="slide">
+    <img src="IMG_2380 Medium.png" alt="Slide 24">
+  </div>
+  <div class="slide">
+    <img src="IMG_2380 copy Medium.png" alt="Slide 25">
+  </div>
+  <div class="slide">
+    <img src="IMG_2386 Medium.png" alt="Slide 26">
+  </div>
+  <div class="slide">
+    <img src="IMG_2415 Medium.png" alt="Slide 27">
+  </div>
+  <div class="slide">
+    <img src="IMG_4306 Medium.png" alt="Slide 28">
+  </div>
+  <div class="slide">
+    <img src="IMG_4324 Medium.png" alt="Slide 29">
+  </div>
+  <div class="slide">
+    <img src="IMG_4593 Medium.png" alt="Slide 30">
+  </div>
+  <div class="slide">
+    <img src="IMG_5426 Medium.png" alt="Slide 31">
+  </div>
+  <div class="slide">
+    <img src="IMG_5433 Medium.png" alt="Slide 32">
+  </div>
+  <div class="slide">
+    <img src="IMG_5848 Medium.png" alt="Slide 33">
+  </div>
+  <div class="slide">
+    <img src="IMG_5887 Medium.png" alt="Slide 34">
+  </div>
+  <div class="slide">
+    <img src="IMG_5899 Medium.png" alt="Slide 35">
+  </div>
+  <div class="slide">
+    <img src="IMG_5937 Medium.png" alt="Slide 36">
+  </div>
+  <div class="slide">
+    <img src="IMG_6907 (1) Medium.png" alt="Slide 37">
+  </div>
+  <div class="slide">
+    <img src="IMG_6908 Medium.png" alt="Slide 38">
+  </div>
+  <div class="slide">
+    <img src="IMG_7555 Medium.png" alt="Slide 39">
+  </div>
+  <div class="slide">
+    <img src="IMG_7564 Medium.png" alt="Slide 40">
+  </div>
+  <div class="slide">
+    <img src="IMG_7576 Medium.png" alt="Slide 41">
+  </div>
+  <div class="slide">
+    <img src="IMG_7587 Medium.png" alt="Slide 42">
+  </div>
+  <div class="slide">
+    <img src="IMG_7593 Medium.png" alt="Slide 43">
+  </div>
+  <div class="slide">
+    <img src="PXL_20250505_162050008 Medium.png" alt="Slide 44">
+  </div>
+  <div class="slide">
+    <img src="PXL_20250508_154750000 Medium.png" alt="Slide 45">
+  </div>
+  <div class="slide">
+    <img src="processed-3DC903C6-8C72-4814-8E0F-D3BE77743528 Medium.png" alt="Slide 46">
+  </div>
+  <div class="slide">
+    <img src="processed-A17C3502-99D3-48B3-86DB-8A1609FDB176 Medium.png" alt="Slide 47">
+  </div>
+
+</div>
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(n) {
+    slides.forEach((slide, index) => {
+      slide.classList.remove("active");
+    });
+    slides[n].classList.add("active");
+  }
+
+  function autoSlide() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlide(slideIndex);
+  }
+
+  setInterval(autoSlide, 3000); // change slide every 3 seconds
+</script>
 </body>
 </html>
